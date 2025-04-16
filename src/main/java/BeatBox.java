@@ -84,8 +84,6 @@ public class BeatBox {
             sequencer = MidiSystem.getSequencer();
             sequencer.open();
             sequence = new Sequence(Sequence.PPQ, 4);
-            track = sequence.createTrack();
-            sequencer.setTempoInBPM(120);
         } catch (Exception e) {
             e.printStackTrace();
         }
